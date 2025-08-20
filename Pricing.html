@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pricing — Oncology Navigation & Advocacy</title>
+  <meta name="description" content="Transparent pricing for private oncology navigation with package and hourly options." />
+  <style>
+    :root{--ink:#122033;--muted:#5b6a7e;--brand:#3a6fff;--soft:#f6f9ff;--max:1100px;--shadow:0 10px 30px rgba(16,38,84,.08)}
+    *{box-sizing:border-box} body{margin:0;background:#fff;color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eef2ff;z-index:10}
+    .wrap{max-width:var(--max);margin:0 auto;padding:24px}
+    .nav{display:flex;justify-content:space-between;align-items:center}
+    nav a{padding:10px 12px;border-radius:10px} nav a.active, nav a:hover{background:#f0f5ff}
+    .menu-btn{display:none}
+    @media (max-width:720px){nav{display:none;position:absolute;right:16px;top:64px;background:#fff;border:1px solid #eef2ff;border-radius:12px;box-shadow:var(--shadow)} nav.open{display:flex;flex-direction:column} .menu-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid #eef2ff;border-radius:10px;background:#fff}}
+    h1{font-size:clamp(28px,5vw,44px);margin:.5rem 0}
+    .lead{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    @media (max-width:980px){.grid{grid-template-columns:1fr}}
+    .plan{border:1px solid #e7efff;border-radius:16px;box-shadow:var(--shadow);padding:22px;background:#fff;display:flex;flex-direction:column}
+    .plan h3{margin:8px 0}
+    .price{font-size:2rem;font-weight:800}
+    .note{color:var(--muted);font-size:.95rem}
+    .cta{margin-top:auto}
+    .btn{display:inline-block;padding:12px 16px;border-radius:12px;border:1px solid #dfe7ff;background:#fff;font-weight:700}
+    .btn.primary{background:var(--brand);color:#fff;border-color:var(--brand)}
+    .faq{background:var(--soft);border:1px solid #e6eeff;border-radius:16px;padding:18px}
+    ul{margin:0 0 0 18px}
+    footer{border-top:1px solid #eef2ff;margin-top:36px}
+    .foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#68758a;padding:20px 0}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <strong>Grace Lyles, PA-C</strong>
+    <button class="menu-btn" aria-label="Open menu" onclick="(function(n){n.classList.toggle('open')})(document.querySelector('nav'))">Menu ▾</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="pricing.html">Pricing</a>
+      <a href="mailto:hello@gracelylescare.com">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Pricing & Options</h1>
+  <p class="lead">Transparent, flexible, and built around what you need. Private pay; invoices suitable for HSA/FSA.</p>
+
+  <div class="grid" aria-label="Pricing plans">
+    <section class="plan" aria-labelledby="p1">
+      <h3 id="p1">Hourly Navigation</h3>
+      <p class="price">$180 / hour</p>
+      <p class="note">Pay-as-you-go support for questions, records, or quick care coordination.</p>
+      <ul>
+        <li>Minimum 1 hour; billed in 15-minute increments after first hour</li>
+        <li>Email summary of next steps</li>
+        <li>Secure video or phone</li>
+      </ul>
+      <p class="cta"><a class="btn primary" href="mailto:hello@gracelylescare.com?subject=Hourly%20Navigation">Get Started</a></p>
+    </section>
+
+    <section class="plan" aria-labelledby="p2">
+      <h3 id="p2">New Diagnosis Bundle</h3>
+      <p class="price">$540</p>
+      <p class="note">3 hours total (save $0 vs hourly) split across: intake, diagnosis & testing review, and treatment-decision prep.</p>
+      <ul>
+        <li>Pathology & staging walkthrough</li>
+        <li>Genetic/biomarker testing primer</li>
+        <li>Curated questions for oncologist</li>
+        <li>Summary document for your family</li>
+      </ul>
+      <p class="cta"><a class="btn primary" href="mailto:hello@gracelylescare.com?subject=New%20Diagnosis%20Bundle">Book Bundle</a></p>
+    </section>
+
+    <section class="plan" aria-labelledby="p3">
+      <h3 id="p3">Ongoing Care Support</h3>
+      <p class="price">$650 / month</p>
+      <p class="note">For active treatment. Up to 4 hours monthly plus email check-ins.</p>
+      <ul>
+        <li>Visit prep & debrief each cycle</li>
+        <li>Coordination for second opinions</li>
+        <li>Insurance-savvy logistics</li>
+        <li>Unused time rolls 1 month</li>
+      </ul>
+      <p class="cta"><a class="btn primary" href="mailto:hello@gracelylescare.com?subject=Ongoing%20Care%20Support">Join Monthly</a></p>
+    </section>
+  </div>
+
+  <section class="faq" style="margin-top:22px">
+    <h2 style="margin-top:0">Other options</h2>
+    <ul>
+      <li><strong>Second-Opinion Prep (Flat):</strong> $300 — records checklist, concise case brief, question set.</li>
+      <li><strong>Insurance/Appeal Guidance (Hourly):</strong> $180/hr — coordination and documentation support.</li>
+      <li><strong>Sliding-Scale Slots:</strong> limited; please inquire.</li>
+      <li><strong>HSA/FSA:</strong> statements provided; not insurance-billable.</li>
+    </ul>
+  </section>
+
+  <section style="margin-top:24px">
+    <h2>How these prices were set</h2>
+    <p class="note">
+      Independent patient advocates commonly charge ~<em>$100–$500/hr</em>, with many real-world services listing rates around <em>$150–$200/hr</em>. Salary benchmarks for oncology/patient navigators often translate to ~$29–$49/hr (employed roles), before overhead and business costs in private practice. Given oncology specialization, PA-C credentials, and 10 years’ experience, <strong>$180/hr</strong> is a fair-market midpoint; bundles reflect typical time blocks for new diagnoses and active treatment.
+    </p>
+    <details>
+      <summary class="note">Sources</summary>
+      <ul class="note">
+        <li>Independent advocate ranges of ~$100–$500/hr (and examples at $150–$200/hr).  [oai_citation:0‡umbrahealthadvocacy.com](https://umbrahealthadvocacy.com/patient-advocate-costs/?utm_source=chatgpt.com) [oai_citation:1‡simplifiedpatientadvocacy.com](https://www.simplifiedpatientadvocacy.com/services/?utm_source=chatgpt.com) [oai_citation:2‡ElderLawAnswers](https://www.elderlawanswers.com/do-i-need-a-professional-patient-advocate-18940?utm_source=chatgpt.com)</li>
+        <li>Oncology/patient navigator wage benchmarks ($29–$49/hr employed roles).  [oai_citation:3‡Salary.com](https://www.salary.com/research/salary/benchmark/patient-navigator-hourly-wages?utm_source=chatgpt.com)</li>
+        <li>Background on navigation costs & value in cancer care.  [oai_citation:4‡PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC3946403/?utm_source=chatgpt.com) [oai_citation:5‡fightcancer.org](https://www.fightcancer.org/releases/biden-cancer-moonshot-announces-expanded-coverage-patient-navigation-private-health-plans-0?utm_source=chatgpt.com)</li>
+      </ul>
+    </details>
+  </section>
+
+  <section style="margin-top:10px">
+    <p class="note"><strong>Important:</strong> I provide non-clinical navigation and advocacy to complement your oncology team. I do not diagnose, treat, prescribe, or replace your physician’s medical advice.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>© <script>document.write(new Date().getFullYear())</script> Grace Lyles, PA-C</div>
+    <div>Questions? <a href="mailto:hello@gracelylescare.com">hello@gracelylescare.com</a></div>
+  </div>
+</footer>
+<script>
+  // mobile nav toggle
+</script>
+</body>
+</html>
