@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Grace Lyles, PA-C</title>
+  <meta name="description" content="Learn about Grace Lyles, PA-C — 10 years in internal medicine and oncology, here to help you navigate cancer care between doctor visits." />
+  <style>
+    :root{--bg:#ffffff;--ink:#1c2430;--muted:#5a6677;--brand:#3a6fff;--soft:#f7faff;--ring:#bfd0ff;--max:900px;--shadow:0 10px 30px rgba(16,38,84,.08)}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eef2ff;z-index:10}
+    .wrap{max-width:var(--max);margin:0 auto;padding:24px}
+    .nav{display:flex;justify-content:space-between;align-items:center}
+    nav a{padding:10px 12px;border-radius:10px} nav a.active, nav a:hover{background:#f0f5ff}
+    .menu-btn{display:none}
+    @media (max-width:720px){nav{display:none;position:absolute;right:16px;top:64px;background:#fff;border:1px solid #eef2ff;border-radius:12px;box-shadow:var(--shadow)} nav.open{display:flex;flex-direction:column} .menu-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid #eef2ff;border-radius:10px;background:#fff}}
+    h1{font-size:clamp(28px,5vw,44px);margin:.5rem 0}
+    .lead{color:var(--muted);font-size:1.05rem}
+    .grid{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:start;margin-top:22px}
+    @media (max-width:920px){.grid{grid-template-columns:1fr}}
+    .card{background:#fff;border:1px solid #eef2ff;border-radius:16px;box-shadow:var(--shadow);padding:22px}
+    .portrait{aspect-ratio:4/5;border-radius:16px;background:linear-gradient(135deg,#cfe0ff,#f4f7ff);border:1px solid #e5eeff}
+    blockquote{margin:0;padding:0;border-left:4px solid var(--brand);padding-left:14px;color:#2c3747}
+    footer{border-top:1px solid #eef2ff;margin-top:36px}
+    .foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#68758a;padding:20px 0}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <strong>Grace Lyles, PA-C</strong>
+    <button class="menu-btn" aria-label="Open menu" onclick="(function(n){n.classList.toggle('open')})(document.querySelector('nav'))">Menu ▾</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a class="active" href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="mailto:hello@gracelylescare.com">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>About Me</h1>
+  <p class="lead">I’m Grace Lyles, PA-C. I guide patients and families through the most confusing parts of cancer care—between doctor visits.</p>
+
+  <div class="grid">
+    <div class="portrait" role="img" aria-label="Portrait placeholder for Grace Lyles"></div>
+    <div class="card">
+      <p>I am Grace Lyles PA-C. I have worked in internal medicine and oncology for the past 10 years. I have worked inside research and non-research settings. Last year my husband was diagnosed with thyroid cancer and I realized just how daunting this would have been without the knowledge and resources we both have within the medical system. I am here to help you answer your questions between your doctor visits and to help you find the care that you need. Cancer care has come a long way even in just the past 10 years. But that often makes decisions of treatment more complicated. I can help you understand your diagnosis, breakdown the different types of genetic testing available, and help you think through all those questions you want to ask.</p>
+
+      <blockquote>
+        “Having cancer is hard, getting what you need out of the medical system doesn’t have to be.”
+      </blockquote>
+      <p style="margin-top:10px">My role complements—never replaces—your oncology team. I do not diagnose, treat, or prescribe; I help you prepare, understand, and decide with confidence.</p>
+
+      <ul>
+        <li><strong>Focus:</strong> medical literacy, genetic & biomarker testing, treatment decision support</li>
+        <li><strong>Approach:</strong> calm, practical, evidence-aware, and family-centered</li>
+        <li><strong>Availability:</strong> secure video, phone, and email between visits</li>
+      </ul>
+
+      <p><a href="pricing.html">Explore pricing & packages →</a></p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>© <script>document.write(new Date().getFullYear())</script> Grace Lyles, PA-C</div>
+    <div>Non-clinical navigation & advocacy. Not medical advice.</div>
+  </div>
+</footer>
+<script>
+  // mobile nav toggle
+</script>
+</body>
+</html>
